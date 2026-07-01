@@ -105,3 +105,11 @@ resource "aws_s3_object" "processed_folder" {
 
   key = "output/"
 }
+
+terraform {
+  backend "s3" {
+    bucket = "lal-terraform-backend-2026"
+    key    = "terraform-glue-project/terraform.tfstate"
+    region = "us-east-1"
+  }
+}

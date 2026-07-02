@@ -111,5 +111,6 @@ terraform {
     bucket = "lal-terraform-backend-2026"
     key    = "terraform-glue-project/terraform.tfstate"
     region = "us-east-1"
+    dynamodb_table = "terraform-state-lock"
   }
 }

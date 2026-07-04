@@ -114,4 +114,9 @@ terraform {
     dynamodb_table = "terraform-state-lock"
   }
 }
+
+
+# S3 change by John
+
 # Updated by Lal
+
